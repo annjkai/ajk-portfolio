@@ -1,4 +1,4 @@
-# Project Template
+# Portfolio
 
 ## Purpose
-A blank project template to clone.
+Simple portfolio.
