@@ -1,0 +1,5 @@
+/*ensures that the content goes all the way to the edges*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
