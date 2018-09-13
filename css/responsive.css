@@ -1,0 +1,108 @@
+/*large desktop*/
+@media screen and (min-width: 1500px) {
+    .container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+
+/*tablet*/
+@media screen and (max-width: 1050px) {
+    .first-content-container {
+        height: 429px;
+    }
+    #main-image-full, #main-image-sm, #main-image-xs {
+        display: none;
+    }
+    #main-image-med {
+        width: 100%;
+        display: block;
+    }
+    .img-text-overlay-home {
+        top: 90px;
+        right: 115px;
+    }
+}
+
+/*smaller tablets*/
+@media screen and (max-width: 800px) {
+    .first-content-container {
+        height: 326px;
+    }
+    #main-image-full, #main-image-med, #main-image-xs {
+        display: none;
+    }
+    #main-image-sm {
+        width: 100%;
+        display: block;
+    }
+    .img-text-overlay-home {
+        top: 75px;
+        right: 70px;
+    }
+    .first-content-heading {
+        font-size: 3em;
+    }
+    .first-content {
+        font-size: 1.25em;
+    }
+    .second-content-container{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+
+/*mobile devices*/
+@media screen and (max-width: 415px) {
+    .first-content-container {
+        height: 169px;
+    }
+    #main-image-full, #main-image-med, #main-image-sm {
+        display: none;
+    }
+    #main-image-xs {
+        width: 100%;
+        display: block;
+    }
+    .img-text-overlay-home {
+        top: 20px;
+        right: 20px;
+    }
+    .first-content-heading {
+        font-size: 2em;
+    }
+    .first-content {
+        font-size: .75em;
+    }
+    .second-content-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+/*ant-sized mobile devices*/
+@media screen and (max-width: 375px) {
+    .img-text-overlay-home {
+        top: 35px;
+        right: 10px;
+    }
+    .header a {
+        font-size: 1em;
+    }
+    .first-content-heading {
+        font-size: 1.5em;
+    }
+    .first-content {
+        font-size: .65em;
+    }
+    .second-content-container{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

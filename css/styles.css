@@ -1,5 +1,178 @@
-/*ensures that the content goes all the way to the edges*/
 html, body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Ledger', serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 70px);
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /*justify-content: flex-end;*/
+    padding: 10px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border: 5px solid #4c4a49;
+    font-family: 'Megrim', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 2px 0 2px;
+}
+.letter-a {
+    color: #ffc86e;
+}
+.letter-k {
+    color: #51e3c2;
+}
+.letter-a, .letter-k {
+    cursor: none;
+}
+
+.header-float-right {
+    width: 100%;
+    justify-content: right;
+}
+
+.header a {
+    font-size: 1.25em;
+    color: #4c4a49;
+    margin-right: 50px;
+    text-decoration: none;
+    line-height:50px;
+    float: right;
+}
+
+.header a:hover {
+    color: #ffc86e;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+.first-content-container {
+    width: 100%;
+    background: #4c4a49;
+    height: 353px;
+    display: flex;
+    /*justify-content: center;*/
+    position: relative;
+}
+
+#main-image-full {
+    width: 100%;
+    display: block;
+}
+#main-image-med, #main-image-sm, #main-image-xs {
+    display: none;
+}
+
+.img-text-overlay-home {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.first-content-heading {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: #ffc86e;    
+}
+.first-content {
+    font-family: 'Ledger', serif;
+    font-size: 1.5em;
+    color: #ffc86e;
+}
+
+.second-content-container {
+    width: 100%;
+    /*background: #51e3c2;*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.contact-request {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 5px;
+}
+
+#contact-button {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #4C4A49;
+    background-color: white;
+    border: 2px solid #FFC86E;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    outline: none;
+}
+#contact-button:hover {
+    background-color: #FFC86E;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #4c4a49;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+.social {
+    color: #51e3c2;
+    font-size: 2em;
+    padding: 10px 20px 10px 20px;
+    outline: none;
+}
+.social:hover {
+    color: #ffc86e;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+
+/*COLORS
+#4c4a49
+#51e3c2
+#ffc86e
+*/
+/*
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: #4C4A49;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+*/
