@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Annika Kaiser</title>
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-modal.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!--icons-->
+    <link rel="icon" href="img/initials-transparent.png">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ledger|Megrim" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <span class="letter-a">a</span><span class="letter-k">k</span>
+            </div>
+            <div class="header-float-right">
+                <a href="about">About Me</a>
+                <a href="projects">Projects</a>
+            </div>
+        </div>            
+
+        <div class="first-content-container">
+            <img id="main-image-full" src="img/california-poppies-lg.jpg" alt="Image of yellow California poppies on a wood-grain background">
+            <img id="main-image-med" src="img/california-poppies-md.jpg" alt="Image of yellow California poppies on a wood-grain background">
+            <img id="main-image-sm" src="img/california-poppies-sm.jpg" alt="Image of yellow California poppies on a wood-grain background">
+            <img id="main-image-xs" src="img/california-poppies-xs.jpg" alt="Image of yellow California poppies on a wood-grain background">
+            <div class="img-text-overlay-home">
+                <h1 class="first-content-heading">Annika Kaiser</h1>
+                <p class="first-content">Front-End Web Developer</p>
+            </div>
+        </div>
+
+        <div class="second-content-container">
+            <p class="second-content">
+                <span>Hi, I'm Annika!</span><br><br>
+                I'm a Front-End Web Developer currently living and working in Leipzig, 
+                Germany. I love to create beautiful, functional, fully accessible and 
+                perfectly responsive web apps. I do so using the latest HTML, CSS and 
+                JavaScript principles, although I am also able to retrofit projects for 
+                full cross-browser functionality. 
+                <br><br>My framework of choice is React, and I can also work with SASS, 
+                LESS and Gulp. Additionally, I speak a bit of back-end, having worked 
+                with Node.js and Express.js.
+                <br>I am seeking opportunities in front-end development, and my very 
+                strong background in project management and the language services industry 
+                make me an excellent addition to any team.
+            </p>
+
+            <div class="contact-request">
+                <p class="contact-content">What do you have in mind?</p><br>
+                <button id="contact-button">Contact me</button>
+            </div>
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal-container">
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <i class="close-modal fa fa-times fa-2x"></i><br>
+                        <p class="modal-text first-modal-text" tabindex="-1">Let's connect!</p>
+                        <p class="modal-text second-modal-text" tabindex="-1">Leave me a message and I'll be in touch.</p>
+                        <div class="form-wrapper">
+                            <form id="contact-form" class="contact-form" role="form" tabindex="0">
+                                <label for="name-field">Name:
+                                    <input 
+                                        id="name-field" 
+                                        type="text" 
+                                        name="fullname" 
+                                        placeholder="Please enter your name"
+                                        required autocomplete="name">
+                                </label>
+                                <label for="email-field">Email:
+                                    <input 
+                                        id="email-field" 
+                                        type="email" 
+                                        placeholder="Please enter your email address"
+                                        required autocomplete="email">
+                                </label>
+                                <label for="message-field">Message:
+                                    <textarea 
+                                        id="message-field" 
+                                        name="message" 
+                                        maxlength="550" 
+                                        role="textbox" 
+                                        placeholder="Tell me a bit about your project!"
+                                        required autocomplete="message"></textarea>
+                                </label>                    
+                                <input 
+                                    id ="submit-button" 
+                                    class="submit-button" 
+                                    type="submit" 
+                                    value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/annikakaiser/" target="_blank"><i class="social fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/annjkai" target="_blank"><i class="social fab fa-github"></i></a>
+        <a href="https://www.xing.com/profile/Annika_Kaiser5/" target="_blank"><i class="social fab fa-xing"></i></a>
+        <a href="https://twitter.com/ironannebonnie" target="_blank"><i class="social fab fa-twitter"></i></a>
+    </div>
+
+    <!--scripts-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

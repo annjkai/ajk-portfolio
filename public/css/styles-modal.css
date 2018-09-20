@@ -1,0 +1,171 @@
+.modal-container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 23%;
+    margin-right: 25%;
+}
+
+.modal {
+    width: 50vw;
+    border: 1px solid #4C4A49;
+    border-radius: 7px;
+    background: white;
+    padding: 20px;
+    display: none;
+    margin-top: 30px;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow: auto;
+}
+
+.close-modal {
+    float: right;
+    right: 0;
+    top: 0; 
+    color: #4C4A49;
+}
+.close-modal:hover {
+    color: #FFC86E;
+    cursor: pointer;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+.modal-text {
+    text-align: center;
+}
+
+.first-modal-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+.second-modal-text {
+    font-family: 'Ledger', serif;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-form {
+    font-family: 'Ledger', serif;
+    width: 75%;
+    padding: 20px;
+    /*margin-right: 45px;*/
+}
+
+#name-field, #email-field, #message-field {
+    font-family: 'Ledger', serif;
+    border: 1px solid #4C4A49;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#message-field {
+    height: 150px;
+}
+
+#name-field:focus {
+    border: 1px solid #FFC86E;
+}
+#email-field:focus {
+    border: 1px solid #FFC86E;
+}
+#message-field:focus {
+    border: 1px solid #FFC86E;
+}
+
+textarea, input { 
+    outline: none; 
+}
+
+.submit-button {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #4C4A49;
+    background-color: white;
+    border: 2px solid #FFC86E;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.submit-button:hover {
+    background-color: #FFC86E;
+    cursor: pointer;
+}
+
+/*****media queries******/
+/*large desktop*/
+@media screen and (min-width: 1500px) {
+    .modal-container {
+        margin-left: 17%;
+    }
+} 
+/*tablet*/
+@media screen and (max-width: 1050px) {
+    .modal {
+        width: 70vw;
+    }
+    .modal-container {
+        margin-left: 12%;
+    }
+}
+
+/*smaller tablets*/
+@media screen and (max-width: 800px) {
+    .modal {
+        width: 85vw;
+    }
+    .modal-container {
+        margin-left: 5%;
+    }
+}
+/*mobile devices*/
+@media only screen and (max-width: 414px) {
+    .modal-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: white;
+    }
+    .modal {
+        width: 95%;
+        height: 95%;
+        border: none;
+        padding: 0;
+    }
+    .close-modal {
+        position: absolute;
+        margin: 10px;
+    }
+    .contact-form {
+        padding: 0;
+    }
+}
+
+/*ant-sized mobile devices*/
+@media only screen and (max-width: 320px) {
+    .first-text {
+        font-size: 2em;
+    }
+    .second-text {
+        font-size: 0.9em;
+    }    
+    #message-field {
+        height: 100px;
+    }
+    .contact-form {
+        padding: 0;
+    }
+}
